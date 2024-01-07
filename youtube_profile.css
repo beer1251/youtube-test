@@ -63,6 +63,12 @@ header .icons .fa-search{
     margin-right:var(--padding);
 }
 
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
 .channel-ABOUT{
     padding: var(--padding);
     display: flex;
