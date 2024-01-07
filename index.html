@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Youtube</title>
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/c227846767.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+    <!--Video Player-->
+    <section class="player">
+        <video controls src="video/video.mp4"></video>
+    </section>
+
+    <!--Video Info-->
+    <section class="info">
+        <!--Metadata-->
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#커플유튜브</li>
+                <li>#정성찬</li>
+                <li>#박원빈</li>
+                <li>#숑넨</li>
+            </ul>
+            <div class="titleAndButton">
+             <span class="title clamp">영상제목</span>
+             <button class="moreBtn">
+                <i class="fas fa-caret-down"></i>
+             </button>
+            </div>
+            <span class="views">1M view 1 month ago</span>
+        </div>
+
+        <!--Actions-->
+        <ul class="actions">
+            <li>
+                <button>
+                    <i class="active fas fa-thumbs-up"></i><span>1K</span>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <i class="fas fa-thumbs-down"></i><span>0</span>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <i class="fas fa-share"></i><span>Share</span>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <i class="fas fa-plus"></i><span>Save</span>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <i class="fas fa-font-awesome-flag"></i><span>Report</span>
+                </button>
+            </li>
+        </ul>
+        <!--Channel Description-->
+        <div class="channel">
+            <div class="channel-metadata">
+                <a href="youtube_profile.html">
+                    <img src="image/avatar.jpg" alt=""/>
+                </a>
+                <div class="info">
+                    <span class="name">차니비니</span>
+                    <span class="subscribers"></span>1M subscribers
+                </div>
+            </div>
+            <button class="subscribe">subscribe</button>
+        </div>
+    </section>
+
+    <!--Comment-->
+    <div class="comment">
+        <div class="comment-title">
+            <span>댓글</span>
+        </div>
+        <form>
+            <textarea placeholder="댓글 추가..."></textarea>
+            <button type="submit">등록</button>
+        </form>
+    </div>
+
+    <!-- Upnext-->
+    <section class="upNext">
+        <div class="upNext-title">
+            <span class="title">Up Next</span>
+        </div>
+        
+        <ul>
+            <li class="item">
+                <div class="img">
+                    <img src="image/thumbnail-QnA1.png" alt=""/>
+                </div>
+                <div class="itemInfo">
+                    <span class="title">|커플 QnA 1탄| 어떻게 만났을까? 서로의 첫인상은? 의칠남부터 ❤️고백❤️까지! </span>
+                    <span class="name">차니비니</span>
+                    <span class="views">913K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img">
+                    <a href="https://youtu.be/0TAAUWHo4Ec?si=ftUSIsW90hysH72o">
+                        <img src="image/thumbnail-love119.png" alt=""/>
+                    </a>
+                </div>
+                <div class="itemInfo">
+                    <span class="title">Love 119</span>
+                    <span class="name">RIIZE</span>
+                    <span class="views">100M views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img">
+                    <a href="https://youtu.be/Wgih_xWWSAE?si=KciJeHFwjVLDf4e9">
+                        <img src="image/thumbnail-christmas.png" alt=""/>
+                    </a>
+                </div>
+                <div class="itemInfo">
+                    <span class="title">[VLOGMAS] 크리스마스 데이트 브이로그🎄| 크리스마스파티 / 쓸없선 교환🎁 / 공포영화보기 </span>
+                    <span class="name">차니비니</span>
+                    <span class="views">906K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img">
+                    <img src="image/thumbnail-QnA2.png" alt=""/>
+                </div>
+                <div class="itemInfo">
+                    <span class="title">|커플 QnA 2탄| 궁금하셨던 모든 것들 대답해드리는 ❤️100만 기념❤️ 무엇이든 물어보세요!/ 한살차 커플의 Q&A / 권태기? 싸움? 직업? </span>
+                    <span class="name">차니비니</span>
+                    <span class="views">1.2M views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img">
+                    <img src="image/thumbnail-usa.png" alt=""/>
+                </div>
+                <div class="itemInfo">
+                    <span class="title">[VLOG IN USA] 10박 11일 미국 여행 브이로그🗽 | 우리들의 첫 해외여행 / 인앤아웃버거 / 장보고 쇼핑하고 구경하기 </span>
+                    <span class="name">차니비니</span>
+                    <span class="views">902K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img">
+                    <a href="https://youtu.be/FESAa1G03i0?si=fHmCxYzEsZUKMTEX">
+                        <img src="image/thumbnail-EVERLAND.png" alt=""/>
+                    </a>
+                </div>
+                <div class="itemInfo">
+                    <span class="title">[VLOG] 놀이공원 브이로그🎡 | 🎠환상의나라 에버랜드로~ / 2023 할로윈🎃 / 귀신의 집🧟‍♂️ </span>
+                    <span class="name">차니비니</span>
+                    <span class="views">1M views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img">
+                    <a href="https://youtu.be/2H0duKgnYgE?si=Ml8JHDCMn1qfnWBS">
+                        <img src="image/thumbnail-MEMORIES.png" alt=""/>
+                    </a>
+                </div>
+                <div class="itemInfo">
+                    <span class="title">MEMORIES</span>
+                    <span class="name">RIIZE</span>
+                    <span class="views">100M views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+        </ul>
+    </section>    
+</body>
+</html>

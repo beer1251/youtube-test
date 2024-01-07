@@ -1,0 +1,193 @@
+:root{
+    /*Color*/
+    --white-color: #fff;
+    --black-color: #140a00;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --grey-dark-color: #909090;
+    --grey-light-color: #e0e0e0;
+
+    /*Size*/
+    --padding: 12px;
+    --avatar-size: 140px;
+
+    /*Font Size*/
+    --font-large: 20px;
+    --font-regular: 16px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    background-color: var(--white-color);
+}
+
+button,
+button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--black-color);
+    color:var(--white-color) ;
+}
+
+.fa-solid.fa-chevron-left {
+    color: white;
+}
+
+header .icons .fa-search{
+    margin-right:var(--padding);
+}
+
+.channel-ABOUT{
+    padding: var(--padding);
+    display: flex;
+}
+
+.channel-ABOUT .avatar img{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    margin-right: var(--padding);
+}
+.channel-ABOUT .channel-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--padding);
+    text-align: left;
+}
+
+.channel-ABOUT .chaneel-title{
+    color: var(--black-color);
+    margin-bottom: var(--padding);
+}
+
+.channel-description{
+    margin-top: var(--padding);
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+.subscribe-button{
+    padding: calc(var(--padding)/4);
+    font-size: var(--font-medium);
+    margin-top: var(--padding);
+    margin-bottom: var(--padding);
+    margin-left: var(--padding);
+    border-width: 1px;
+    border-radius: 10%;
+    color: var(--grey-dark-color); /* 버튼의 글씨 색을 하얀색으로 설정합니다. */
+}
+
+.videobar-title{
+    display: flex;
+    justify-content: space-between;
+    margin-left: calc(var(--padding)*2);
+    margin-right: calc(var(--padding)*2);
+    margin-bottom: var(--padding);
+    border-bottom: 1px solid var(--grey-light-color);
+    font-size: var(--font-medium);
+    padding-bottom: var(--padding);
+}
+
+.videobar-title span {
+    color: darkgrey; /* 모든 span에 어두운 회색 글씨를 적용합니다. */
+}
+
+.videobar-title .video {
+    color: black; /* 'video' 클래스를 가진 span에만 검은색 글씨를 적용합니다. */
+}
+
+.videolist-button button{
+    margin-left: var(--padding);
+    color: var(--grey-dark-color);
+}
+
+.videolist-button .popular{
+    color: var(--black-color);
+}
+
+.videolist ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* 아이템들 사이의 간격을 조정합니다. */
+    padding: 0;
+    list-style: none;
+}
+
+.videolist ul .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.videolist ul .item img {
+    padding: var(--padding);
+    width: 100%; /* 이미지가 아이템의 전체 너비를 차지하도록 설정합니다. */
+}
+
+.videolist ul .item .itemInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.videolist ul .item .itemInfo .Infoleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.videolist ul .item .itemInfo .Infoleft .title,
+.videolist ul .item .itemInfo .Infoleft .views {
+    margin-left: var(--padding);
+}
+
+.videolist ul .item .itemInfo .Infoleft .title{
+    font-size:var(--font-medium);
+    color: var(--black-color);
+    margin-right: calc(var(--padding)/2);
+}
+
+.videolist ul .item .itemInfo .Infoleft .views{
+    color: var(--grey-dark-color);
+    font-size: var(--font-small);
+    margin-top: calc(var(--padding)/2);
+    margin-bottom: calc(var(--padding)/2);
+}
+
+.videolist ul .item .itemInfo .Inforight {
+    display: flex;
+    align-items: top; /* 아이콘을 중앙에 배치합니다. */
+    margin-top: calc(var(--padding)/2);
+    margin-right: var(--padding);
+}
+
+@media (max-width: 768px) {
+    .videolist ul {
+        grid-template-columns: 1fr;
+    }
+}
+
